@@ -6,6 +6,10 @@ const NodePrototype = <FunctionalPrototype />;
 const FragmentPrototype = <></>;
 
 export default class NodeSerializer {
+  constructor() {
+    this.#store = new Map<string, Function>();
+  }
+  
   #store = new Map<string, Function>();
   #fixKeys(objs: { key: number }[]) {
     if (objs.find((x) => x.key !== null)) {
