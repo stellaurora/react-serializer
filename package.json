@@ -26,7 +26,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
-    "react": "^18.2.0"
+  "peerDependencies": {
+    "react": "19.0.0-canary-4c12339ce-20240408"
   }
 }
