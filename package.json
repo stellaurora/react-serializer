@@ -1,5 +1,5 @@
 {
-  "name": "@mojsoski/react-serializer",
+  "name": "react-serializer",
   "version": "1.0.0",
   "description": "Serialize react nodes to JSON-compatible objects",
   "main": "dist/index.js",
@@ -9,7 +9,7 @@
     "serializer",
     "json"
   ],
-  "author": "Mihail Mojsoski",
+  "author": "Mihail Mojsoski, Stellaurora",
   "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
