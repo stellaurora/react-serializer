@@ -147,17 +147,13 @@ export default class NodeSerializer {
     };
   }
 
-  serialize(node: JSX.Element, json: boolean = true): any {
+  serialize(node: JSX.Element): string {
     const data = this.#serializeObject(node);
-    if (json) {
-      return JSON.stringify(data);
-    } else {
-      return data;
-    }
+    return JSON.stringify(data);
   }
 
-  deserialize(value: any, json: boolean = true): JSX.Element {
-    const parsed = (json ? JSON.parse(value) : value) as {
+  deserialize(value: any): JSX.Element {
+    const parsed = (JSON.parse(value)) as {
       props: any;
       type: string;
       react: "func" | "html" | "fragment" | "exotic";
